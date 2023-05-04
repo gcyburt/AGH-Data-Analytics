@@ -1,0 +1,32 @@
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 0
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = fixed_param
+    num_chains = 1 (Default)
+id = 1 (Default)
+data
+  file = /tmp/tmpjdx6wopj/g5zeqw_k.json
+init = 2 (Default)
+random
+  seed = 123456
+output
+  file = /home/AGH-Data-Analytics/lab_5/samples/prior-20230413091848.csv
+  diagnostic_file =  (Default)
+  refresh = 1000
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 1 (Default)
+
+Exception: mismatch in dimension declared and found in context; processing stage=data initialization; variable name=X; position=0; dims declared=(1000,3); dims found=(10,2) (in '/home/AGH-Data-Analytics/lab_5/prior.stan', line 4, column 2 to column 17)
