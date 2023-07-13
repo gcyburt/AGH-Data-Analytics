@@ -1,5 +1,5 @@
 data {
-   int<lower=10> N;
+   int<lower=1> N;
 }
 
 parameters {
